@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
-import { useERP } from '../context/ERPContext';
+// Use the combined context that includes ERP data
+import { useERP } from '../context/AppContext';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, LineChart, Line } from 'recharts';
 import { format, startOfMonth, endOfMonth, startOfYear, endOfYear } from 'date-fns';
 

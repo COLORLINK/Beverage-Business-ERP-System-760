@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
-import { useERP } from '../context/ERPContext';
+// Use the combined context that includes ERP data
+import { useERP } from '../context/AppContext';
 
 const { FiDollarSign, FiGlobe, FiSettings, FiSave } = FiIcons;
 
